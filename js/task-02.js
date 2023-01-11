@@ -8,7 +8,7 @@ const ingredients = [
 ];
 
 let arr = [];
-let createList = ingredients.forEach((el) => {
+let createList = ingredients.map((el) => {
   const ingredientsList = document.createElement("li");
   ingredientsList.className = "item";
   ingredientsList.innerHTML = el;
